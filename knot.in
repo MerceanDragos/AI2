@@ -1,0 +1,14 @@
+formulas(assumptions).
+
+    x * x = x.
+    ( x * y ) * y = x.
+    ( x * z ) * ( y * z ) = ( x * y ) * z.
+
+    a * b = c.
+    b * c = a.
+    c * a = b.
+end_of_list.
+
+formulas(goals).
+    ( a = b ) & ( b = c ).
+end_of_list.
