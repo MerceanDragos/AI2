@@ -4,11 +4,14 @@ formulas(assumptions).
     ( x * y ) * y = x.
     ( x * z ) * ( y * z ) = ( x * y ) * z.
 
-    a * b = c.
-    b * c = a.
-    c * a = b.
+    a1 * a4 = a2.
+    a2 * a5 = a3.
+    a3 * a1 = a4.
+    a4 * a2 = a5.
+    a5 * a3 = a1.    
 end_of_list.
 
 formulas(goals).
-    ( a = b ) & ( b = c ).
+    (a1 = a2) & (a2 = a3) &
+    (a3 = a4) & (a4 = a5).
 end_of_list.

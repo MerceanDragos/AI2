@@ -1,0 +1,21 @@
+formulas(assumptions).
+
+    x * x = x.
+    ( x * y ) * y = x.
+    ( x * z ) * ( y * z ) = ( x * y ) * z.
+
+    a1 * a5 = a2.
+    a2 * a4 = a3.
+    a3 * a7 = a4.
+    a4 * a2 = a5.
+    a5 * a1 = a6.
+    a6 * a8 = a7.
+    a7 * a3 = a8.
+    a8 * a6 = a1.
+end_of_list.
+
+formulas(goals).
+    (a1 = a2) & (a2 = a3) &
+    (a3 = a4) & (a4 = a5) &
+    (a5 = a6) & (a6 = a7) & (a7 = a8).
+end_of_list.

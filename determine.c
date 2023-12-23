@@ -12,15 +12,15 @@ void *prover9_thread_function ( void *filename ) {
 
     if ( id ) {
         int status;
-        waitpid( id, &status, 0 );
+        waitpid ( id, &status, 0 );
         if ( WIFEXITED ( status ) )
             printf( "Unknot\n" );
         stop = 1;
     }
     else {
         int devNull = open ( "/dev/null", O_WRONLY );
-        dup2( devNull, STDOUT_FILENO );
-        dup2( devNull, STDERR_FILENO );
+        dup2 ( devNull, STDOUT_FILENO );
+        dup2 ( devNull, STDERR_FILENO );
         execl ( "/usr/local/bin/prover9", "prover9", "-f", ( char * ) filename, NULL );
     }
 
@@ -32,15 +32,15 @@ void *mace4_thread_function ( void *filename ) {
 
     if ( id ) {
         int status;
-        waitpid( id, &status, 0 );
+        waitpid ( id, &status, 0 );
         if ( WIFEXITED ( status ) )
             printf( "Knot\n" );
         stop = 2;
     }
     else {
         int devNull = open ( "/dev/null", O_WRONLY );
-        dup2( devNull, STDOUT_FILENO );
-        dup2( devNull, STDERR_FILENO );
+        dup2 ( devNull, STDOUT_FILENO );
+        dup2 ( devNull, STDERR_FILENO );
         execl ( "/usr/local/bin/mace4", "mace4", "-f", ( char * ) filename, NULL );
     }
 
