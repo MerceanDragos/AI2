@@ -76,13 +76,14 @@ How to use "knot"?
         
         Your list must start and end with the same arc:  { 1, 2, 3, ..., 1 }
 
-        An arc cannot appear twice at an even index in your list: { 1, 2, 1, ... } IMPOSSIBLE ARC!!!
+        An arc cannot appear twice at an even index in your list ( assuming 0 indexed list ): { 1, 2, 1, ... } IMPOSSIBLE ARC!!!
             Exception: The arc that your list starts with will appear again at the end of your list!
 
-        Every arc at an odd index in your list must also appear at an even index in your list: { 1, 2, 1 } LINK, NOT KNOT!!!
-            A link is a type of knot made of more than one string.
+        Every arc at an odd index in your list must also appear at an even index in your list,
+        otherwise you have a link, not a knot: { 1, 2, 1 } LINK, NOT KNOT!!!
+            A link is a collection of knots which may or may not be 'linked' together.
 
-        The length of you list must be equal to 2 * NO_OF_ARCS + 1
+        The length of you list must be equal to 2 * NO_OF_ARCS_IN_YOUR_KNOT + 1
 
     The validate_knot function checks if your knot is valid using these criterion above.
 
