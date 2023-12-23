@@ -45,7 +45,6 @@ How to use "knot"?
       2 -> \_______/
 
     ---------------------------------------------------------------------------------------------------------------
-    
 
     7   #define TREFOIL_KNOT { 1, 2, 3, 1, 2, 3, 1 }
     8   #define CINQUEFOIL_KNOT { 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1 }
@@ -59,7 +58,7 @@ How to use "knot"?
 
     To generate a file for any knot, you will need a pen and paper to determine how to represent your knot in this format.
     You will need to draw your knot and label each of the arcs with a number of your choice ( an arc is any continuous line in your drawing ).
-    Then starting from any arc, follow it and write the first arc that it goes under and the arc that it turn into:
+    Then starting from any arc, follow it and write the first arc that it goes under and the arc that it turns into:
 
         { 1, 2, 3 }
 
