@@ -44,13 +44,15 @@ How to use "knot"?
           |         |
       2 -> \_______/
 
-    --------------------------------------------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------------------------------
+    
 
     7   #define TREFOIL_KNOT { 1, 2, 3, 1, 2, 3, 1 }
     8   #define CINQUEFOIL_KNOT { 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1 }
     9   #define SEPTAFOIL_KNOT { 1, 2, 3, 4, 5, 6, 7, 1, 2 ,3, 4, 5, 6, 7, 1 }
 
-    --------------------------------------------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------------------------------
+    
 
     Executing the knot program will create a file named "file.in" that contains the representation of the TREFOIL_KNOT and the
     goal to demonstrate that all of these arcs are actually the same singular arc ( equivalent to being the unknot ).
